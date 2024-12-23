@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marriage Story</title>
+    <link rel="icon" type="image/png" href="./assets/imgs/letter-f.png" />
+
+    <link rel="stylesheet" href="mp_style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <div class="logo-name">
+          <img id="img_logo" src="./assets/imgs/letter-f.png" alt="Logo" />
+          <span class="site-name">FLICKTOPIA</span>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./action.html">Action</a></li>
+            <li><a href="./comedy.html">Comedy</a></li>
+            <li><a href="./adventure.html">Adventure</a></li>
+            <li><a href="./Romance.html">Romance</a></li>
+            <li><a href="./drama.html">Drama</a></li>
+            <li><a href="./Horror.html">Horror</a></li>
+            <li><a href="./Scinece_fiction.html">Science Fiction</a></li>
+            <li><a href="./animation.html">Animation</a></li>
+          </ul>
+        </nav>
+
+        <div class="right-section">
+          <input type="text" placeholder="search..." id="search" />
+          <select id="sel">
+            <option style="color: black" value="English">English</option>
+            <option style="color: black" value="Arabic">Arabic</option>
+          </select>
+          <a href="./sign_in_page/signin.html">
+            <input type="button" value="Sign in" class="sign-in" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section id="sect_01">
+        <section id="movie_pic_sec">
+          <img
+            src="./assets/imgs/drama3.jpg"
+            alt="movie image"
+            style="
+              width: 20vw;
+              border-radius: 20px;
+              box-shadow: 0px 0px 15px 1px rgba(158, 158, 158, 0.68);
+            "
+          />
+        </section>
+        <section id="movie_discription_sec">
+          <h1 id="m_title" style="font-size: 45px; margin: 0">
+            Marriage Story
+          </h1>
+          <section id="m_categ_sect">
+            <p class="movie_category">Drama</p>
+            <p class="movie_category">Romance</p>
+          </section>
+          <section id="m_info">
+            <img
+              src="./assets/imgs/icons8-imdb-100 (1).png"
+              alt=""
+              width="4%"
+            />
+            <p class="info_text">7.9/10</p>
+            <img
+              src="./assets/imgs/icons8-tv-pg-100 (1).png"
+              alt=""
+              class="info_imgs"
+              width="3%"
+            />
+            <p class="info_text">R</p>
+            <img
+              src="./assets/imgs/icons8-historical-100.png"
+              alt=""
+              class="info_imgs"
+              width="3%"
+            />
+            <p class="info_text">2h 17m</p>
+          </section>
+          <p id="m_discr">
+            A stage director and his actor wife struggle through a grueling
+            divorce that pushes them to their personal and creative extremes.
+            Noah Baumbach's incisive and compassionate look at a marriage
+            breaking up and a family staying together.
+          </p>
+          <section id="btns_sec">
+            <a href="#watching_sect"
+              ><button class="m_btns">Watch now</button></a
+            >
+            <a href="#download_sect"
+              ><button class="m_btns">Download</button></a
+            >
+          </section>
+        </section>
+        <section id="cast_info">
+          <article>
+            <h2>Director</h2>
+            <p>Noah Baumbach</p>
+          </article>
+          <article>
+            <h2>Writer</h2>
+            <p>Noah Baumbach</p>
+          </article>
+          <article>
+            <h2>stars</h2>
+            <p>Adam Driver</p>
+            <p>Scarlett Johansson</p>
+            <p>Julia Greer</p>
+          </article>
+        </section>
+      </section>
+      <section
+        id="watching_sect"
+        class="w_d_sects"
+        style="box-shadow: 0px -10px 10px 1px rgba(0, 0, 0, 0.68)"
+      >
+        <p
+          style="
+            text-align: center;
+            font-size: 40px;
+            color: rgb(193, 193, 193);
+            margin: 0%;
+            padding-top: 3%;
+          "
+        >
+          Watching servers
+        </p>
+        <section id="watching_btns_sect">
+          <button class="watching_btns">Server 1</button>
+          <button class="watching_btns">Server 2</button>
+          <button class="watching_btns">Server 4</button>
+          <button class="watching_btns">Server 4</button>
+          <button class="watching_btns">Server 5</button>
+        </section>
+      </section>
+      <section id="sect_02">
+        <section id="display">
+          <video autoplay loop muted id="video_display">
+            <source src="./assets/imgs/video.mp4" type="video/mp4" />
+          </video>
+        </section>
+      </section>
+      <section
+        id="download_sect"
+        class="w_d_sects"
+        style="box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.68)"
+      >
+        <p
+          style="
+            text-align: center;
+            font-size: 40px;
+            color: rgb(193, 193, 193);
+            margin: 0%;
+            padding-top: 3%;
+          "
+        >
+          Downloading servers
+        </p>
+        <section id="downloading_btns_sect">
+          <button class="downloading_btns">Server 1</button>
+          <button class="downloading_btns">Server 2</button>
+          <button class="downloading_btns">Server 4</button>
+          <button class="downloading_btns">Server 4</button>
+          <button class="downloading_btns">Server 5</button>
+        </section>
+      </section>
+      <section id="sect_03">
+        <div id="similar_movies">Similar movies</div>
+        <button class="arrow left">&#8249;</button>
+        <div class="movies">
+          <div class="movie">
+            <img src="./assets/imgs/drama1.jpg" alt="Movie 1" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama2.jpg" alt="Movie 2" />
+          </div>
+          <div class="movie">
+            <a href="./drama_movie.html">
+              <img src="./assets/imgs/drama3.jpg" alt="Movie 3" />
+            </a>
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama4.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama5.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama6.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama7.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama8.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama9.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama10.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama11.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama12.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/drama13.jpg" alt="Movie 4" />
+          </div>
+        </div>
+        <button class="arrow right">&#8250;</button>
+      </section>
+    </main>
+    <footer id="footer">
+      <p style="color: rgb(193, 193, 193); text-align: center">@flicktopia</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

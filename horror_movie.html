@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stopmotion</title>
+    <link rel="icon" type="image/png" href="./assets/imgs/letter-f.png"/>
+
+    <link rel="stylesheet" href="mp_style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <div class="logo-name">
+          <img id="img_logo" src="./assets/imgs/letter-f.png" alt="Logo" />
+          <span class="site-name">FLICKTOPIA</span>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./action.html">Action</a></li>
+            <li><a href="./comedy.html">Comedy</a></li>
+            <li><a href="./adventure.html">Adventure</a></li>
+            <li><a href="./Romance.html">Romance</a></li>
+            <li><a href="./drama.html">Drama</a></li>
+            <li><a href="./Horror.html">Horror</a></li>
+            <li><a href="./Scinece_fiction.html">Science Fiction</a></li>
+            <li><a href="./animation.html">Animation</a></li>
+          </ul>
+        </nav>
+
+        <div class="right-section">
+          <input type="text" placeholder="search..." id="search" />
+          <select id="sel">
+            <option style="color: black" value="English">English</option>
+            <option style="color: black" value="Arabic">Arabic</option>
+          </select>
+          <a href="./sign_in_page/signin.html">
+            <input type="button" value="Sign in" class="sign-in" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section id="sect_01">
+        <section id="movie_pic_sec">
+          <img
+            src="./assets/imgs/2.jpg"
+            alt="movie image"
+            style="
+              width: 20vw;
+              border-radius: 20px;
+              box-shadow: 0px 0px 15px 1px rgba(158, 158, 158, 0.68);
+            "
+          />
+        </section>
+        <section id="movie_discription_sec">
+          <h1 id="m_title" style="font-size: 45px; margin: 0">Stopmotion</h1>
+          <section id="m_categ_sect">
+            <p class="movie_category">psychological horror</p>
+            <p class="movie_category">horror</p>
+            <p class="movie_category">thriller</p>
+          </section>
+          <section id="m_info">
+            <img
+              src="./assets/imgs/icons8-imdb-100 (1).png"
+              alt=""
+              width="4%"
+            />
+            <p class="info_text">5.6/10</p>
+            <img
+              src="./assets/imgs/icons8-tv-pg-100 (1).png"
+              alt=""
+              class="info_imgs"
+              width="3%"
+            />
+            <p class="info_text">13</p>
+            <img
+              src="./assets/imgs/icons8-historical-100.png"
+              alt=""
+              class="info_imgs"
+              width="3%"
+            />
+            <p class="info_text">1h 33m</p>
+          </section>
+          <p id="m_discr">
+            Stop motion movies are a style of animation where objects are
+            manipulated in small increments between individually photographed
+            frames, creating the illusion of movement when played back. This
+            technique was popularized in classic films like "The Nightmare
+            Before Christmas" and "Corpse Bride." To create a stop motion movie,
+            animators use puppets or objects and painstakingly move them a small
+            amount between each frame. The images are then played back in
+            sequence, giving the appearance of fluid motion. Many modern
+            filmmakers have used this technique to create unique and captivating
+            animated films.
+          </p>
+          <section id="btns_sec">
+            <a href="#watching_sect"
+              ><button class="m_btns">Watch now</button></a
+            >
+            <a href="#download_sect"
+              ><button class="m_btns">Download</button></a
+            >
+          </section>
+        </section>
+        <section id="cast_info">
+          <article>
+            <h2>Director</h2>
+            <p>Robert Morgan</p>
+          </article>
+          <article>
+            <h2>Writers</h2>
+            <p>Robin King</p>
+            <p>Robert Morgan</p>
+          </article>
+          <article>
+            <h2>stars</h2>
+            <p>Aisling Franciosi</p>
+            <p>Stella Gonet</p>
+            <p>Tom York</p>
+          </article>
+        </section>
+      </section>
+      <section
+        id="watching_sect"
+        class="w_d_sects"
+        style="box-shadow: 0px -10px 10px 1px rgba(0, 0, 0, 0.68)"
+      >
+        <p
+          style="
+            text-align: center;
+            font-size: 40px;
+            color: rgb(193, 193, 193);
+            margin: 0%;
+            padding-top: 3%;
+          "
+        >
+          Watching servers
+        </p>
+        <section id="watching_btns_sect">
+          <button class="watching_btns">Server 1</button>
+          <button class="watching_btns">Server 2</button>
+          <button class="watching_btns">Server 4</button>
+          <button class="watching_btns">Server 4</button>
+          <button class="watching_btns">Server 5</button>
+        </section>
+      </section>
+      <section id="sect_02">
+        <section id="display">
+          <video autoplay loop muted id="video_display">
+            <source src="./assets/imgs/video.mp4" type="video/mp4" />
+          </video>
+        </section>
+      </section>
+      <section
+        id="download_sect"
+        class="w_d_sects"
+        style="box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.68)"
+      >
+        <p
+          style="
+            text-align: center;
+            font-size: 40px;
+            color: rgb(193, 193, 193);
+            margin: 0%;
+            padding-top: 3%;
+          "
+        >
+          Downloading servers
+        </p>
+        <section id="downloading_btns_sect">
+          <button class="downloading_btns">Server 1</button>
+          <button class="downloading_btns">Server 2</button>
+          <button class="downloading_btns">Server 4</button>
+          <button class="downloading_btns">Server 4</button>
+          <button class="downloading_btns">Server 5</button>
+        </section>
+      </section>
+      <section id="sect_03">
+        <div id="similar_movies">Similar movies</div>
+        <button class="arrow left">&#8249;</button>
+        <div class="movies">
+          <div class="movie">
+            <img src="./assets/imgs/1.avif" alt="Movie 1" />
+          </div>
+          <div class="movie">
+            <a href="horror_movie.html">
+              <img src="./assets/imgs/2.jpg" alt="Movie 2" /></a>
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/3.jpg" alt="Movie 3" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/4.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/5.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/6.webp" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/Companion.webp" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/the_legacy.webp" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/star.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/i_know.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/exhuma-movie-poster.avif" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/azrael.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/the_monkey.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/the-first-omen.avif" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/megan.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/nosferatu.jpg" alt="Movie 4" />
+          </div>
+          <div class="movie">
+            <img src="./assets/imgs/presence.jpg" alt="Movie 4" />
+          </div>
+        </div>
+        <button class="arrow right">&#8250;</button>
+      </section>
+    </main>
+    <footer id="footer">
+      <p style="color: rgb(193, 193, 193); text-align: center">@flicktopia</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

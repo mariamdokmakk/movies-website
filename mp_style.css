@@ -1,0 +1,203 @@
+/*--------------------------------------------general---------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #0e0f0f;
+  /* background: linear-gradient(150deg, #341109, #1d030a, #0d0d0e,#0e0f0f ); */
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s ease infinite;
+  color: rgb(193, 193, 193);
+
+}
+/* @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+/*--------------------------------------------Header------------------------------------------------------------*/
+#header {
+  width:97vw;
+  top: 0;
+  position: fixed;
+  background-color: rgb(52, 17, 9);
+  box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.68);
+}
+/*--------------------------------------------main------------------------------------------------------------*/
+/*----------------------section1----------------------*/
+#sect_01 {
+  display: grid;
+  grid-template-columns: 30vw 46vw 22.9vw;
+  grid-template-rows: 1fr;
+  grid-template-areas: "mp md mc";
+  margin: 5% 0;
+  margin-top: 10%;
+  color: rgb(168, 168, 168);
+}
+/*--------------------movie img--------------------*/
+#movie_pic_sec {
+  grid-area: mp;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*--------------------discription--------------------*/
+#movie_discription_sec {
+  grid-area: md;
+}
+/*discription*/
+#m_discr {
+  font-size: 20px;
+  margin: 5% 0%;
+  text-align: justify;
+  margin-right: 5%;
+}
+/*movie name*/
+#m_title {
+  font-size: 200%;
+  display: inline-block;
+}
+/*movie category*/
+#m_categ_sect {
+  display: flex;
+}
+.movie_category {
+  background-color: #533232;
+  margin-right: 1%;
+  border-radius: 20px;
+  padding: 0.5% 1.5%;
+  font-size: 110%;
+}
+/*movie information*/
+#m_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info_imgs {
+  background-color: rgb(168, 168, 168);
+  padding: 0.5%;
+  border-radius: 10px;
+}
+.info_text {
+  margin: 0 2% 0 0.5%;
+}
+/*watch and download button*/
+.m_btns {
+  margin-right: 0.5rem;
+  margin-bottom: 1%;
+  padding: 10px;
+  background-color: #341109;
+  border-radius: 20px;
+  width: 20%;
+  color: rgb(193, 193, 193);
+  font-weight: bold;
+  font-size: 110%;
+  
+}
+.m_btns:hover{
+  color: rgb(111, 111, 111);
+}
+
+a button {
+  cursor: pointer;
+}
+
+
+/*movie cast and director*/
+#cast_info {
+  grid-area: mc;
+  padding: 0% 15%;
+}
+
+article p {
+  color: #9c9c9c;
+  margin: 3% 0;
+}
+
+article h2 {
+  color: #552216;
+  border-top: #552216 1px solid;
+  padding-top: 2%;
+}
+/*----------------------section 02----------------------*/
+#sect_02 {
+  background-color: rgb(23, 7, 4);
+}
+.w_d_sects {
+  scroll-margin-top: 10vh;
+  background-color: rgb(23, 7, 4);
+}
+/*watch and download servers buttons*/
+#watching_btns_sect,
+#downloading_btns_sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+}
+.watching_btns,
+.downloading_btns {
+  padding: 10px;
+  margin: 1% 0.3%;
+  font-size: 20px;
+  color: rgb(193, 193, 193);
+  background-color: #341109;
+  border-radius: 50px;
+  width: 10%;
+}
+.watching_btns:hover{
+  color: rgb(111, 111, 111);
+  cursor: pointer;
+
+} 
+.downloading_btns:hover{
+  color: rgb(111, 111, 111);
+  cursor: pointer;
+
+} 
+
+/*movie display*/
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#video_display {
+  width: 70%;
+  background-color: #341109;
+  padding: 1%;
+  border-radius: 10px;
+}
+/*----------------------section 03----------------------*/
+#sect_03 {
+  padding: 20px;
+  position: relative;
+}
+#similar_movies {
+  font-weight: 700;
+  color: rgb(193, 193, 193);
+  font-size: 40px;
+  margin:1%;
+}
+/*------------------------footer------------------------------------*/
+#footer{
+  margin-top: 1%;
+  background-color: rgb(52, 17, 9);
+  height: 10vh;
+  box-shadow: 0px -10px 15px 3px rgba(0, 0, 0, 0.68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

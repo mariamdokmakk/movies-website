@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="icon" type="image/png" href="../assets/imgs/letter-f.png" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <div class="logo-name">
+          <img id="img_logo" src="../assets/imgs/letter-f.png" alt="Logo" />
+          <span class="site-name">FLICKTOPIA</span>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../action.html">Action</a></li>
+            <li><a href="../comedy.html">Comedy</a></li>
+            <li><a href="../adventure.html">Adventure</a></li>
+            <li><a href="../Romance.html">Romance</a></li>
+            <li><a href="../drama.html">Drama</a></li>
+            <li><a href="../Horror.html">Horror</a></li>
+            <li><a href="../Scinece_fiction.html">Science Fiction</a></li>
+            <li><a href="../animation.html">Animation</a></li>
+          </ul>
+        </nav>
+
+        <div class="right-section">
+          <input type="text" placeholder="search..." id="search" />
+          <select id="sel">
+            <option style="color: black" value="English">English</option>
+            <option style="color: black" value="Arabic">Arabic</option>
+          </select>
+          <a href="./signin.html">
+            <input type="button" value="Sign in" class="sign-in" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="sign-container">
+      <h1>Join Flicktopia</h1>
+      <form action="/signup" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="gender" value="male" /> Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> Female</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm_password"
+            placeholder="Re-enter your password"
+          />
+        </div>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            style="accent-color: #bb6b00"
+          />
+          <label for="terms"
+            >I accept the
+            <a href="/rules" target="_blank" style="color: #bb6b00"
+              >site rules</a
+            >.</label
+          >
+        </div>
+          <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+      <div class="alt-link">
+        Already have an account? <a href="signin.html">Sign in</a>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <p style="color: rgb(193, 193, 193); text-align: center">@flicktopia</p>
+    </footer>
+  </body>
+</html>

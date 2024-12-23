@@ -1,0 +1,272 @@
+/***************************header*********************************************/
+header {
+  background-color: rgb(52, 17, 9);
+  padding:2vh 1vw;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#img_logo {
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(193, 193, 193);
+  ;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+nav ul {
+  padding: 1px;
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: rgb(193, 193, 193);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 10px;
+}
+nav ul li a:hover {
+  color: rgb(179, 37, 5);
+  text-decoration: underline;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#search {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  background-color:rgb(224, 224, 224);
+  ;
+}
+
+#sel {
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+  color: rgb(193, 193, 193);
+}
+
+.sign-in {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(193, 193, 193);
+  ;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  background-color: rgb(179, 37, 5);
+}
+/***************************************************************main****************************/
+video {
+  width: 100%;
+}
+
+.tv-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  filter: blur(14px);
+}
+
+.tv-container::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  border-radius: 15px;
+  background: rgba(75, 11, 11, 0.359);
+  box-shadow: inset 0 0 30px rgba(93, 20, 20, 0.661);
+  z-index: 1;
+}
+
+.tv-container {
+  width: 97%;
+
+  aspect-ratio: 20 / 9;
+
+  position: relative;
+  background-color: #333;
+
+  border-radius: 20px;
+
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  border-style: inset;
+
+  overflow: hidden;
+  margin: 1rem;
+  filter: blur(50%);
+
+  animation: fadeInZoom 2s forwards;
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*****************************************movies**************************************************/
+
+.container {
+  padding: 20px;
+  position: relative;
+  overflow-y: hidden;
+}
+a{
+  text-decoration: none;
+  color: rgb(193, 193, 193);
+}
+.section-title{
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.section-title button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.section-title button:hover,
+.section-title:hover {
+  color: rgb(179, 37, 5);
+}
+
+.movies {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 20px;
+  scrollbar-width: none;
+}
+
+.movie {
+  flex: 0 0 auto;
+  width: 200px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 25px;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.movie:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(241, 2, 2, 0.753);
+  border-radius: 25px;
+}
+
+.movie .title {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.arrow.left {
+  left: 10px;
+  color: rgb(179, 37, 5);
+  background-color: #fff;
+}
+
+.arrow.left:hover {
+  color: #fff;
+  background-color: rgb(179, 37, 5);
+}
+
+.arrow.right {
+  right: 10px;
+  color: rgb(179, 37, 5);
+  background-color: #fff;
+}
+
+.arrow.right:hover {
+  color: #fff;
+  background-color: rgb(179, 37, 5);
+}
+
